@@ -8,14 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #7a5d46;
+    color: #000000;
     background-color: #f5f2e6c5;
 }
 
 /* Uniform header sizes */
 h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
-    color: #D9886A;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -34,7 +34,7 @@ h3 {
 /* Header styles */
 header {
     background-color: #D9BBA3;
-    color: #413226;
+    color: #000000;
     padding: 5px 0;
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #7a5d46;
+    color: #000000;
     text-decoration: none;
     padding: 10px 20px;
 }
@@ -67,7 +67,7 @@ nav ul li a:hover {
 }
 .btn {
     background-color: #D9886A;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
@@ -190,7 +190,7 @@ form {
 }
 
 .form h1 {
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: #D9BBA3;
     text-align: center;
     padding: 10px;
@@ -230,7 +230,7 @@ form button {
 .category {
     background-color: #D9886A;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 20px;
     margin: 10px;
     font-size: 16px;
@@ -265,20 +265,20 @@ form button {
     justify-content: space-between;
     align-items: center;
     margin: 10px 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .medicine-row input {
     width: 30%;
     text-align: center;
     background-color: #1a0d0270;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 button.add-btn {
     padding: 5px 10px;
     background-color: #b4896ba8;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -292,7 +292,7 @@ button.add-btn:hover {
     display: inline-block;
     padding: 8px 20px;
     background-color: #D9886A;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
@@ -311,7 +311,7 @@ button.add-btn:hover {
     width: 80%;
     border-collapse: collapse;
     background-color: #ecddd1;
-    color: #7a5d46;
+    color: #000000;
 }
 
 .summary th, .summary td {
@@ -322,7 +322,7 @@ button.add-btn:hover {
 
 .summary th {
     background-color: #D9BBA3;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .summary h2 {
@@ -334,7 +334,7 @@ button.add-btn:hover {
 
 footer {
     background-color: #D9BBA3;
-    color: #7a5d46;
+    color: #000000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -372,7 +372,7 @@ footer {
 button {
     display: inline-block;
     padding: 10px 20px;
-    color: #fff;
+    color: #000000;
     background-color: #D9886A;
     border: none;
     border-radius: 5px;

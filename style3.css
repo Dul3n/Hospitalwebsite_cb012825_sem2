@@ -27,7 +27,7 @@ body {
     display: block;
     margin-bottom: 10px;
     font-size: 14px;
-    color: #333;
+    color: #000000;
 }
 
 .contact-form input[type="text"],
@@ -48,7 +48,7 @@ body {
 
 .contact-form input[type="submit"] {
     background-color: #D9886A;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 12px 20px;
     cursor: pointer;
