@@ -41,6 +41,7 @@ header {
     align-items: center;
 }
 
+
 header .logo img {
     width: 150px;
 }
@@ -161,15 +162,6 @@ nav ul li a:hover {
     font-size: 1.2em;
 }
 
-.orders-form {
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 600px;
-    margin: auto;
-    justify-content: space-between;
-    
-}
 
 h1 {
     text-align: center;
@@ -190,40 +182,155 @@ label {
 
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="number"],
-select {
-    width: 1220px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    margin-left: 20px;
-
-}
-
-input[type="file"] {
-    margin-bottom: 15px;
-}
-
-button {
-    background-color: #D9886A;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 1200px;
-    font-size: 16px;
-    margin-left: 34px;
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
     margin-bottom: 20px;
 }
 
-button:hover {
+.form h1 {
+    color: white;
+    background-color: #D9BBA3;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+form label {
+    grid-column: 1 / -1;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.category {
+    background-color: #D9886A;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.category:hover {
     background-color: #e0b79a;
 }
+
+/* Medicine Table */
+.medicine-table {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #D9BBA3;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.medicine-table h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.medicine-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+    color: white;
+}
+
+.medicine-row input {
+    width: 30%;
+    text-align: center;
+    background-color: #1a0d0270;
+    color: white;
+}
+
+button.add-btn {
+    padding: 5px 10px;
+    background-color: #b4896ba8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.add-btn:hover {
+    background-color: #775944a8;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #D9886A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #e0b79a;
+}
+
+
+/* Summary Table */
+.summary table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #ecddd1;
+    color: #7a5d46;
+}
+
+.summary th, .summary td {
+    padding: 10px;
+    border: 1px solid #29140325;
+    text-align: center;
+}
+
+.summary th {
+    background-color: #D9BBA3;
+    color: white;
+}
+
+.summary h2 {
+    text-align: center;
+    padding: 8px;
+    margin-top: 60px;
+}
+
 
 footer {
     background-color: #D9BBA3;
@@ -251,3 +358,168 @@ footer {
     width: 30px;
     margin-right: 10px;
 }
+
+
+
+/* Order total */
+#order-total {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #D9886A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0b79a;
+}
+
+
+
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+/* For small screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        padding: 10px;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .service-box {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 20px;
+    }
+
+    .service-box .icon {
+        font-size: 40px;
+    }
+
+    .service-box h2 {
+        font-size: 1.3em;
+    }
+
+    .service-box p {
+        font-size: 0.95em;
+    }
+
+    .orders-form {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* For medium screens (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header nav ul {
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        margin-right: 10%;
+        margin-left: 20%
+    }
+
+    .service-item {
+        width: 45%;
+    }
+
+    .service-box {
+        width: 48%; /* Two items per row on tablets */
+        margin-bottom: 25px;
+        margin-right: 1px;
+        margin-left: 2px;
+    }
+
+    .service-box .icon {
+        font-size: 45px;
+    }
+
+    .service-box h2 {
+        font-size: 1.4em;
+    }
+
+    .orders-form {
+        max-width: 80%; /* Adjust form width for tablets */
+        padding: 20px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 22px; /* Slightly reduce the font size */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust heading size */
+        margin-left: 0; /* Center align heading */
+    }
+
+    label {
+        margin-left: 0; /* Align labels properly */
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    button {
+        width: 100%; /* Ensure full-width input fields */
+        font-size: 16px; /* Slightly adjust font size */
+    }
+
+    button {
+        font-size: 15px; /* Adjust button text size */
+    }
+
+
+}
+
+/* For large screens (e.g., desktops) */
+@media (min-width: 1025px) {
+    .service-item {
+        width: 30%;
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+

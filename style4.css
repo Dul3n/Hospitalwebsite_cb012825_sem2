@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f2e6c5;
+    color: #7a5d46;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #7a5d46;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #7a5d46;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #7a5d46;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+table th {
+    background-color: #b4896ba8;
+    color: #fff;
+}
+
+
+/* Form Container */
+#payment-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Form Elements */
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #141313;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ecddd140;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ccc;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #D9886A;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0b79a;
+}
+
+/* Payment Details Section */
+#payment-details {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#payment-details label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#payment-details input[type="text"] {
+    margin-bottom: 10px;
+}
+
+/* Optional Fields */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Order Total Section */
+#order-total {
+    font-size: 1.25rem;
+    color: #5b5957c2;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    #payment-form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #payment-form {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}

@@ -732,6 +732,212 @@ tfoot {
 
 
 
+/* For small screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        padding: 10px;
+    }
+
+    .services-container {
+        padding: 40px; /* padding for smaller screens */
+    }
+
+    /* Stack service items vertically */
+    .service-row {
+        flex-direction: column; /* Change to column layout */
+        gap: 15px; /* Reduce gap between items */
+    }
+
+    /* Ensure service items take full width */
+    .service-item {
+        max-width: 100%; /* Full width for each item */
+        flex: 1 1 100%; /* Allow item to grow to full width */
+    }
+
+    /* Adjust font sizes */
+    .service-item h3 {
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    .service-item p {
+        font-size: 14px; /* Smaller paragraph font size */
+    }
+
+    /* Center service description text */
+    .service-description {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .service-description h2 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    /* Reduce margin for services section */
+    .services-section {
+        margin-top: 30px; /* Less margin for compact layout */
+    }
+
+    .key-features, .steps-to-book-an-appointment, .menu-of-services {
+        padding: 10px; /* Reduced padding for mobile sections */
+    }
+
+    .features-section h2, .steps-section h2 {
+        font-size: 20px; /* Adjusted heading size */
+    }
+
+    .features-section ul, .steps-section ul {
+        padding-left: 20px; /* Indentation for lists */
+    }
+
+    .services-section {
+        flex-direction: column; /* Stack services vertically */
+    }
+
+    .column {
+        flex: 1 1 100%; /* Full width for columns */
+        margin-bottom: 20px; /* Space between columns */
+    }
+
+    .box {
+        flex: 1 1 100%; /* Full width for boxes */
+        margin-bottom: 20px; /* Space between boxes */
+    }
+
+    .branch {
+        width: 100%; 
+    }
+
+    .branch h3 {
+        font-size: 1.2em; /* Adjust font size for readability */
+    }
+
+    .branch img {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px; /* Slightly smaller map on mobile */
+    }
+
+    .team-overview {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .team img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .booking-form {
+        width: 90%; /* Make form take up more width on mobile */
+        padding: 15px;
+    }
+
+    .booking-form .form-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .booking-form .form-buttons button {
+        width: 100%; 
+        margin-bottom: 10px; /* Space between buttons */
+        margin-left: -120px;
+    }
+
+}
+
+/* For medium screens (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header nav ul {
+        justify-content: space-between;
+    }
+
+    .services-container {
+        padding: 50px; /* Slightly reduced padding for tablets */
+    }
+
+    /* Keep service items in a row but allow wrapping */
+    .service-row {
+        flex-direction: row; /* Maintain row layout */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        gap: 15px; /* Slightly reduced gap between items */
+    }
+
+    /* Adjust service item width for better fit */
+    .service-item {
+        max-width: 45%; /* Allow items to take up to 45% of the container */
+        flex: 1 1 45%; /* Flex-basis set to 45% */
+    }
+
+    /* Adjust font sizes for better readability */
+    .service-item h3 {
+        font-size: 22px; /* Slightly larger heading size */
+    }
+
+    .service-item p {
+        font-size: 16px; /* Slightly increase paragraph font size */
+    }
+
+    /* Adjust service description text */
+    .service-description {
+        padding: 20px; /* Moderate padding */
+    }
+
+    .service-description h2 {
+        font-size: 28px; /* Larger heading size for better impact */
+    }
+
+    /* Margin for services section */
+    .services-section {
+        margin-top: 40px; /* Adequate margin for separation */
+    }
+
+    .branch {
+        width: 48%;
+    }
+
+    iframe {
+        height: 280px; /* Slight adjustment for the map size */
+    }
+
+    .team-overview {
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .team img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .booking-form {
+        width: 70%;
+    }
+}
+
+/* For large screens (e.g., desktops) */
+@media (min-width: 1025px) {
+    .service-item {
+        width: 30%;
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+
+
+
+
+
+
 
 
 
